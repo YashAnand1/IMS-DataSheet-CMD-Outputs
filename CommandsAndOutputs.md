@@ -13,3 +13,25 @@
 | 8| `itldims get services` | Hostname, IP, Listening_Port, Machine_Type, Running_Services | Data_NIC_AbhaProd_infra |
 | 9| `itldims get infra` | Hostname, IP, CPU, RAM, Type, OS |Data_NIC_AbhaProd_infra |
 | 10| `itldims get infra -o wide` | Hostname, IP, Listening_Port, CPU, RAM, Type, Netmask, OS, Gateway, Running_Services | Data_NIC_AbhaProd_infra |
+
+
+| S. No. | Command Combination       | output|        | Remarks                                      
+| 1| `itldims get ns`              | FINO, NIC  |to include projects  |                              
+| 1| `itldims get pods`              | App instances | |  
+
+| Resources      | Analogy                                        | Remarks                   |
+|----------------|------------------------------------------------|---------------------------------------------|
+| Clusters       | Client Org NAME                              |                   -                          |
+| Namespace      | dc(/DR?) AND ENVIRONMENT | |
+| Deployments    | Application name                               | Client Applications - e.g. Vahan, Sarathi  |
+| Pods           | Client applications of Deployment applications | Sarathi Client Application - e.g. SarathiService, NewDL, RenewDL, DBServer |
+| Containers     | Further details of client applications         | e.g. SarathiService runs on Tomcat 9, includes db images |
+| replicaset     | Applications that are load balanced            |                    -                        |
+| statefulset    | Clustered applications                          |Will be retrieved from etransport sheet     |
+| Nodes          | Server Types - Phys or VM or K8 Clusters       |                      -                      |
+| Images         | Container images                                 | Platform - Java 8/ Java 11, PHP 7 |
+| Services       | -                                               | DB Cluster IPs, App Cluster IPs or Individual App IPs |
+| ConfigMap      | App Configuration                                | 1 config per app                             |
+| PV             | Total storage                                   | -            |
+| PVC            | Individual Application Shared Storage          | RWO/RWX - SAN Volume/NAS Volumes            |
+| Ingress        | Incoming LBs - HAProxy                           |                    -                       |
