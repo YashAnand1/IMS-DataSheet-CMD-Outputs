@@ -7,7 +7,7 @@
 | 2| `itldims get nodes -o wide`       | Hostname	App_Name	Tomcat_Name	Tomcat_port	Public_URL, Database, API | Data_NIC_AbhaProd_app |
 | 3| `itldims get apps`         | Hostname, App_Name, Database, API, Environment | Data_NIC_AbhaProd_app |
 | 4| `itldims get pv`         | Hostname, App_Name, IP, Internal_Partition, PV  | Data_NIC_AbhaProd_storage |
-| 5| `itldims get storage`         |  | Data_NIC_AbhaProd_storage |
+| 5| `itldims get storage`   |  | Data_NIC_AbhaProd_storage |
 | 6| `itldims get storage -o wide`         |   | Data_NIC_AbhaProd_storage |
 | 7| `itldims get ingress`   | | Data_NIC_AbhaProd_infra |
 | 8| `itldims get services` |  | Data_NIC_AbhaProd_infra |
