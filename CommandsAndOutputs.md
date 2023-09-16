@@ -1,7 +1,7 @@
 # Outputs For Resource Related Commands
 
 | S. No. | Command Combination               | Included Headers                                      | Sheet_Name|
-|-------|-----------------------------------|---------------------------------------------------------|
+|-------|-----------------------------------|---------------------------------------------------------|---|
 | 1| `itldims get configmap`              | Hostname, App_Name, Public_IP, LB_IP | Data_NIC_AbhaProd_app |
 | 2| `itldims get nodes`       | Hostname, App_Name, Webapp_Path,	Environment	config_Map | Data_NIC_AbhaProd_app |
 | 2| `itldims get nodes -o wide`       | Hostname	App_Name	Tomcat_Name	Tomcat_port	Public_URL, Database, API | Data_NIC_AbhaProd_app |
