@@ -21,4 +21,4 @@ Reference Spreadsheet: [IMS_Checkpost_App_Data](https://docs.google.com/spreadsh
 | 1| `itldims get pods`              | App instances | |  
 
 | PVC            | Individual Application Shared Storage          | RWO/RWX - SAN Volume/NAS Volumes            |
-| Ingress        | Incoming LBs - HAProxy                           |                    -                       |
+| Ingress        | Incoming LBs - HAProxy                           |                    --                       |
